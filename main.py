@@ -2458,6 +2458,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                         theseCards[card2] += 1
                     else:
                         theseCards[card2] = 1
+                theseCards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)
                 total.append(theseCards)
 
             if 'Player' in chosenNum:
@@ -2466,7 +2467,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
 
                 max = 0
                 if len(theseCards) >= 10:
-                    most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)
+                    most_common_cards = theseCards
                     col1, col2, col3, col4, col5, col6, col7, col8, col9, col10 = st.columns(10)
                     cardx1 = most_common_cards[0][0]
                     cardx2 = most_common_cards[1][0]

@@ -1561,7 +1561,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
     'King of Clubs', 'Ace of Clubs']
     )
     
-    numPeople = st.sidebar.selectbox('How many people (including yourself) are still in?',[ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+    numPeople = st.selectbox('How many people (including yourself) are still in?',[ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
 
     cardx = [card1, card2, card3, card4, card5, card6, card7]
     repeats = False

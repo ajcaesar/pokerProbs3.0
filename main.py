@@ -2433,7 +2433,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                 numbers.append('Player ' + str(i))
             
             chosenNum = st.radio(
-                 "Click to see the 5 best cards to come out for each player", numbers)
+                 "Click to see the 10 best cards that could come out for each player", numbers)
             if 'Player' in chosenNum:
                 theseCards = {}
                 num = int(chosenNum.split()[-1])

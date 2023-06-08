@@ -1569,7 +1569,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize first card
         if not 'None' in card1:
             with col1:
-                st.image(options[card1], caption=None, use_column_width=True)
+                st.image(options[card1], caption=card1, use_column_width=True)
             if 'Clubs' in card1:
                 card1_Suit = 'Clubs'
             elif 'Hearts' in card1:
@@ -1611,7 +1611,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize second card
         if not 'None' in card2:
             with col2:
-                st.image(options[card2], caption=None, use_column_width=True)
+                st.image(options[card2], caption=card2, use_column_width=True)
             if 'Clubs' in card2:
                 card2_Suit = 'Clubs'
             elif 'Hearts' in card2:
@@ -1653,7 +1653,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize third card
         if not 'None' in card3:
             with col4:
-                st.image(options[card3], caption=None, use_column_width=True)
+                st.image(options[card3], caption=card3, use_column_width=True)
             if 'Clubs' in card3:
                 card3_Suit = 'Clubs'
             elif 'Hearts' in card3:
@@ -1695,7 +1695,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize fourth card
         if not 'None' in card4:
             with col5:
-                st.image(options[card4], caption=None, use_column_width=True)
+                st.image(options[card4], caption=card4, use_column_width=True)
             if 'Clubs' in card4:
                 card4_Suit = 'Clubs'
             elif 'Hearts' in card4:
@@ -1737,7 +1737,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize fifth card
         if not 'None' in card5:
             with col6:
-                st.image(options[card5], caption=None, use_column_width=True)
+                st.image(options[card5], caption=card5, use_column_width=True)
             if 'Clubs' in card5:
                 card5_Suit = 'Clubs'
             elif 'Hearts' in card5:
@@ -1779,7 +1779,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize sixth card
         if not 'None' in card6:
             with col7:
-                st.image(options[card6], caption=None, use_column_width=True)
+                st.image(options[card6], caption=card6, use_column_width=True)
             if 'Clubs' in card6:
                 card6_Suit = 'Clubs'
             elif 'Hearts' in card6:
@@ -1822,7 +1822,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         #initialize seventh card
         if not 'None' in card7:
             with col8:
-                st.image(options[card7], caption=None, use_column_width=True)
+                st.image(options[card7], caption=card7, use_column_width=True)
             if 'Clubs' in card7:
                 card7_Suit = 'Clubs'
             elif 'Hearts' in card7:
@@ -2101,9 +2101,9 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                 with theseColumns[3*(i-1)]:
                     st.write('Cards for Player ' + str(i) + ' -->')
                 with theseColumns[3*(i-1) + 1]:
-                    st.image(options[PersonCard1], caption=None, use_column_width=True)
+                    st.image(options[PersonCard1], caption=PersonCard1, use_column_width=True)
                 with theseColumns[3*(i-1) + 2]:
-                    st.image(options[PersonCard2], caption=None, use_column_width=True)
+                    st.image(options[PersonCard2], caption=PersonCard2, use_column_width=True)
                     
                 if 'Clubs' in PersonCard1:
                     PersonCard1_Suit = 'Clubs'
@@ -2188,7 +2188,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
        
         if not 'None' in card3:
             with col2:
-                st.image(options[card3], caption=None, use_column_width=True)
+                st.image(options[card3], caption=card3, use_column_width=True)
             if 'Clubs' in card3:
                 card3_Suit = 'Clubs'
             elif 'Hearts' in card3:
@@ -2230,7 +2230,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
         #initialize fourth card
         if not 'None' in card4:
             with col3:
-               st.image(options[card4], caption=None, use_column_width=True)
+               st.image(options[card4], caption=card4, use_column_width=True)
             if 'Clubs' in card4:
                 card4_Suit = 'Clubs'
             elif 'Hearts' in card4:
@@ -2272,7 +2272,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
         #initialize fifth card
         if not 'None' in card5:
             with col4:
-                st.image(options[card5], caption=None, use_column_width=True)
+                st.image(options[card5], caption=card5, use_column_width=True)
             if 'Clubs' in card5:
                 card5_Suit = 'Clubs'
             elif 'Hearts' in card5:
@@ -2314,7 +2314,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
         #initialize sixth card
         if not 'None' in card6:
             with col5:
-                st.image(options[card6], caption=None, use_column_width=True)
+                st.image(options[card6], caption=card6, use_column_width=True)
             if 'Clubs' in card6:
                 card6_Suit = 'Clubs'
             elif 'Hearts' in card6:
@@ -2357,7 +2357,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
         #initialize seventh card
         if not 'None' in card7:
             with col6:
-                st.image(options[card7], caption=None, use_column_width=True)
+                st.image(options[card7], caption=card7, use_column_width=True)
             if 'Clubs' in card7:
                 card7_Suit = 'Clubs'
             elif 'Hearts' in card7:
@@ -2497,7 +2497,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     with columns[thisNumber%5]:
                         card = card.getCard()
                         st.write(card)
-                        st.image(options[card], caption=None, use_column_width = True)
+                        st.image(options[card], caption=card, use_column_width = True)
                         thisNumber += 1
                 
         elif numCards == 5:

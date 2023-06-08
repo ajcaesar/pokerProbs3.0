@@ -2479,25 +2479,25 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     cardx10 = most_common_cards[9][0]
                     
                     with col1:
-                        st.image(options[cardx1], caption=cardx1, use_column_width = True)
+                        st.image(options[cardx1], caption = cardx1, use_column_width = True)
                     with col2: 
                         st.image(options[cardx2], caption = cardx2, use_column_width = True)
                     with col3:
-                         st.image(options[cardx3], caption = cardx3, use_column_width = True)
+                        st.image(options[cardx3], caption = cardx3, use_column_width = True)
                     with col4:
-                         st.image(options[cardx4], caption = cardx4, use_column_width = True)
+                        st.image(options[cardx4], caption = cardx4, use_column_width = True)
                     with col5:
-                         st.image(options[cardx5], caption = cardx5, use_column_width = True)
+                        st.image(options[cardx5], caption = cardx5, use_column_width = True)
                     with col6:
-                        st.image(options[cardx6], caption=cardx6, use_column_width = True)
+                        st.image(options[cardx6], caption = cardx6, use_column_width = True)
                     with col7: 
                         st.image(options[cardx7], caption = cardx7, use_column_width = True)
                     with col8:
-                         st.image(options[cardx8], caption = cardx8, use_column_width = True)
+                        st.image(options[cardx8], caption = cardx8, use_column_width = True)
                     with col9:
-                         st.image(options[cardx9], caption = cardx9, use_column_width = True)
+                        st.image(options[cardx9], caption = cardx9, use_column_width = True)
                     with col10:
-                         st.image(options[cardx10], caption = cardx10, use_column_width = True)
+                        st.image(options[cardx10], caption = cardx10, use_column_width = True)
                 else:
                     most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)
                     columns = st.columns(len(theseCards))

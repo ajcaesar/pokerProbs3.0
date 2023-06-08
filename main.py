@@ -2480,34 +2480,34 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     
                     with col1:
                         st.image(options[cardx1], caption = cardx1, use_column_width = True)
-                        st.write(most_common_cards[0][0])
+                        st.write(most_common_cards[0][1])
                     with col2: 
                         st.image(options[cardx2], caption = cardx2, use_column_width = True)
-                        st.write(most_common_cards[0][1])
+                        st.write(most_common_cards[1][1])
                     with col3:
                         st.image(options[cardx3], caption = cardx3, use_column_width = True)
-                        st.write(most_common_cards[0][2])
+                        st.write(most_common_cards[2][1])
                     with col4:
                         st.image(options[cardx4], caption = cardx4, use_column_width = True)
-                        st.write(most_common_cards[0][3])
+                        st.write(most_common_cards[3][1])
                     with col5:
                         st.image(options[cardx5], caption = cardx5, use_column_width = True)
-                        st.write(most_common_cards[0][4])
+                        st.write(most_common_cards[4][1])
                     with col6:
                         st.image(options[cardx6], caption = cardx6, use_column_width = True)
-                        st.write(most_common_cards[0][5])
+                        st.write(most_common_cards[5][1])
                     with col7: 
                         st.image(options[cardx7], caption = cardx7, use_column_width = True)
-                        st.write(most_common_cards[0][6])
+                        st.write(most_common_cards[6][1])
                     with col8:
                         st.image(options[cardx8], caption = cardx8, use_column_width = True)
-                        st.write(most_common_cards[0][7])
+                        st.write(most_common_cards[7][1])
                     with col9:
                         st.image(options[cardx9], caption = cardx9, use_column_width = True)
-                        st.write(most_common_cards[0][8])
+                        st.write(most_common_cards[8][1])
                     with col10:
                         st.image(options[cardx10], caption = cardx10, use_column_width = True)
-                        st.write(most_common_cards[0][9])
+                        st.write(most_common_cards[9][1])
                 else:
                     most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)
                     columns = st.columns(len(theseCards))

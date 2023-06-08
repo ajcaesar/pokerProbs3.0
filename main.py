@@ -1187,6 +1187,15 @@ class multipleHands:
         numCards = findNones(self.table)
         return numCards
     
+    def getPlayerCards(self):
+        num = 0
+        for entry in self.list:
+            if entry[0] != None:
+                num += 1
+            if entry[1] != None:
+                num += 1
+        return num
+
     def getNumPlayers(self):
         return self.numPlayers
     
@@ -2417,7 +2426,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             st.write('Error: please fill out all players cards')
         elif numCards not in nums:
             st.write('Error: Number of Cards on table is not 0, 3, 4, or 5')
-        elif numCards == 0:
+        elif numCards == 0 and game.getPlayerCards() == 2*numPlayers:
             probabilities, maxPlayers, minPlayers, tiedWinner, tiedLoser = game.FindProbs()
             for i in range(len(probabilities)):
                 st.write('Player ' + str(players[i].getPlayerNum()) + ' Cards: ' + players[i].getCard1().getCard() + ', ' + players[i].getCard2().getCard())

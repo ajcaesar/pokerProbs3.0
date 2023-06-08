@@ -2443,10 +2443,10 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             
             chosenNum = st.radio(
                  "Click to see the 10 best cards that could come out for each player from best to worst", numbers)
-            if 'Player' in chosenNum:
+            total = []
+            for i in range(numPlayers):
                 theseCards = {}
-                num = int(chosenNum.split()[-1])
-                for card in winnersCards[num - 1]:
+                for card in winnersCards[i]:
                     card1 = card[0].getCard()
                     card2 = card[1].getCard()
                     if card1 in theseCards:
@@ -2457,6 +2457,12 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                         theseCards[card2] += 1
                     else:
                         theseCards[card2] = 1
+                total.append(theseCards)
+
+            if 'Player' in chosenNum:
+                num = int(chosenNum.split()[-1])
+                theseCards = total[num-1]
+
                 max = 0
                 if len(theseCards) >= 10:
                     most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)

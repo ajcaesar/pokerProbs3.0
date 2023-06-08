@@ -1259,7 +1259,7 @@ class multipleHands:
             
             tiedWinner = False
             tiedLoser = False
-            for i in range(probabilities):
+            for i in range(len(probabilities)):):
                 if probabilities[i] == maximum_value and i != maximumPlayer:
                     tiedWinner = True
                     maxPlayers.append(i)

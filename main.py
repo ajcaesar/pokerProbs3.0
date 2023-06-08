@@ -2480,24 +2480,34 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     
                     with col1:
                         st.image(options[cardx1], caption = cardx1, use_column_width = True)
+                        st.write(most_common_cards[0][0])
                     with col2: 
                         st.image(options[cardx2], caption = cardx2, use_column_width = True)
+                        st.write(most_common_cards[0][1])
                     with col3:
                         st.image(options[cardx3], caption = cardx3, use_column_width = True)
+                        st.write(most_common_cards[0][2])
                     with col4:
                         st.image(options[cardx4], caption = cardx4, use_column_width = True)
+                        st.write(most_common_cards[0][3])
                     with col5:
                         st.image(options[cardx5], caption = cardx5, use_column_width = True)
+                        st.write(most_common_cards[0][4])
                     with col6:
                         st.image(options[cardx6], caption = cardx6, use_column_width = True)
+                        st.write(most_common_cards[0][5])
                     with col7: 
                         st.image(options[cardx7], caption = cardx7, use_column_width = True)
+                        st.write(most_common_cards[0][6])
                     with col8:
                         st.image(options[cardx8], caption = cardx8, use_column_width = True)
+                        st.write(most_common_cards[0][7])
                     with col9:
                         st.image(options[cardx9], caption = cardx9, use_column_width = True)
+                        st.write(most_common_cards[0][8])
                     with col10:
                         st.image(options[cardx10], caption = cardx10, use_column_width = True)
+                        st.write(most_common_cards[0][9])
                 else:
                     most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)
                     columns = st.columns(len(theseCards))

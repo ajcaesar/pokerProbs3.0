@@ -2174,7 +2174,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     PersonCard2_Digit = 8
                 elif '9' in PersonCard2:
                     PersonCard2_Digit = 9
-                elif '20' in PersonCard2:
+                elif '10' in PersonCard2:
                     PersonCard2_Digit = 10
                 elif 'Jack' in PersonCard2:
                     PersonCard2_Digit = 11

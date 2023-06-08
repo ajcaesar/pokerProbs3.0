@@ -2431,7 +2431,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             for i in range(len(probabilities)):
                 st.write('Player ' + str(players[i].getPlayerNum()) + ' Cards: ' + players[i].getCard1().getCard() + ', ' + players[i].getCard2().getCard())
                 st.write('Player ' + str(players[i].getPlayerNum()) + ' Probability of Winning: ' + str(probabilities[i]))
-        elif numCards == 3:
+        elif numCards == 3 and game.getPlayerCards() == 2*numPlayers:
             winners, victor, winnersCards, winners1 = game.FindProbs()
             for i in range(len(winners)):
                 st.write('Player ' + str(players[i].getPlayerNum()) + ' Cards: ' + players[i].getCard1().getCard() + ', ' + players[i].getCard2().getCard())
@@ -2501,7 +2501,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                             card = most_common_cards[i][0]
                             st.image(options[card], caption=card, use_column_width = True)
                       
-        elif numCards == 4:
+        elif numCards == 4 and game.getPlayerCards() == 2*numPlayers:
             winners, victor, winnersCards, winners1 = game.FindProbs()
             for i in range(len(winners)):
                 st.write('Player ' + str(players[i].getPlayerNum()) + ' Cards: ' + players[i].getCard1().getCard() + ', ' + players[i].getCard2().getCard())
@@ -2525,7 +2525,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                         st.image(options[card], caption=card, use_column_width = True)
                         thisNumber += 1
                 
-        elif numCards == 5:
+        elif numCards == 5 and game.getPlayerCards() == 2*numPlayers:
             for player in players:
                 st.write('Cards for Player ' + str(player.getPlayerNum()) + ': ' + player.getCard1().getCard() + ', ' + player.getCard2().getCard())
             

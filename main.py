@@ -2463,7 +2463,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             if 'Player' in chosenNum:
                 num = int(chosenNum.split()[-1])
                 theseCards = total[num-1]
-                st.write(len(theseCards))
+                st.write(len(winnersCards[num-1]))
 
                 max = 0
                 if len(theseCards) >= 10:

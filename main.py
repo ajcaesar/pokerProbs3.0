@@ -2444,7 +2444,6 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             chosenNum = st.radio(
                  "Click to see the 10 best cards that could come out for each player from best to worst", numbers)
             total = []
-            st.write(len(winnersCards[1]))
             for i in range(numPlayers):
                 theseCards = {}
                 for card in winnersCards[i]:
@@ -2464,6 +2463,7 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
             if 'Player' in chosenNum:
                 num = int(chosenNum.split()[-1])
                 theseCards = total[num-1]
+                st.write(len(theseCards))
 
                 max = 0
                 if len(theseCards) >= 10:

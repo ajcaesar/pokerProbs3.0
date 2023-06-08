@@ -2449,8 +2449,6 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                     else:
                         theseCards[card2] = 1
                 max = 0
-                for i in range(theseCards):
-                    if 
                 if len(theseCards) >= 5:
                     most_common_cards = sorted(theseCards.items(), key=lambda x: x[1], reverse=True)[:5]
                     col1, col2, col3, col4, col5 = st.columns(5)

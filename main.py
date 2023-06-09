@@ -1919,7 +1919,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
                 
                 tot, average, prop, minCard, maxCard = hand.probabilityTurn()
                 st.write('For each of the ' + str(len(tot)) + ' possible cards to come out on the river, you would win an average of ' + str(average) + ' out of 990 possible hands')
-                st.write('your probability of winning with ' + str(numPeople) ' left in the game is : ' + str(100*(prop**(numPeople-1))) + '%')
+                st.write('your probability of winning with ' + str(numPeople) + ' left in the game is : ' + str(100*(prop**(numPeople-1))) + '%')
                 st.write('Best card to come out on the river: ' + maxCard.getCard())
                 st.write('Worst card to come out on the river: ' + minCard.getCard())
                 

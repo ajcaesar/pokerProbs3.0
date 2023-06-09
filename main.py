@@ -1445,6 +1445,12 @@ options = {
 }
 
 st.title('Poker Probabilities Calculator')
+st.write("""Directions: choose one of the two modes below based on if just your cards or everyones cards are known. Then, use the toolbar
+at the left to input your cards, the cards on the table, and everyone elses cards (if applicable). If the menu is not showing up, click the 
+arrow in the top left corner. Then, give the program some time and it will print your probability of winning the poker hand. Note that for teh 
+'just your hand known' mode the time it takes to calculate your probability of winning is slow when only 3 or 4 cards have been dealt onto the table. 
+Email ajcaesar294@gmail.com with any questions or concerns"""
+         
 choice = st.selectbox('Choose Your Mode', ['Probabilities Calculator (just your hand known)','Probabilities Calculator (everyones hand known)']) 
 if choice == 'Probabilities Calculator (just your hand known)':
     st.header('Select your hand at the left. Hand must have 2, 5, 6, or 7 cards. If card has not yet been dealt, select None')

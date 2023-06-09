@@ -1448,6 +1448,7 @@ st.title('Poker Probabilities Calculator')
 choice = st.selectbox('Choose Your Mode', ['Probabilities Calculator (just your hand known)','Probabilities Calculator (everyones hand known)']) 
 if choice == 'Probabilities Calculator (just your hand known)':
     st.header('Select your hand at the left. Hand must have 2, 5, 6, or 7 cards. If card has not yet been dealt, select None')
+    st.subheader('Note that this mode is still very slow when there are 3 or 4 cards out on the table due to the many iterations required.')
 
     card1 = st.sidebar.selectbox('First Card', [
     'None', '2 of Hearts', '3 of Hearts', '4 of Hearts'

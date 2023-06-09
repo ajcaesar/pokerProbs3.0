@@ -1962,7 +1962,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
         st.write('No repeat cards allowed. Please change your selected cards')
 
 elif choice == 'Probabilities Calculator (everyones hand known)':
-    st.header('Select your hand at the left. Hand must have 2, 5, 6, or 7 cards. If card has not yet been dealt, select None')
+    st.header('Select your hand at the left. Each hand must be full and table must have 0, 3, 4, or 5 cards. If card has not yet been dealt, select None')
     numPlayers = st.selectbox('Select the number of players in the game (including yourself)', [2,3,4,5,6,7,8,9,10])
     
     st.sidebar.write('Select Cards on the Table - If a card has not come out yet select None')

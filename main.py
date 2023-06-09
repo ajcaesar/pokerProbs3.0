@@ -1918,14 +1918,15 @@ if choice == 'Probabilities Calculator (just your hand known)':
                 
                 
                 tot, average, prop, minCard, maxCard = hand.probabilityTurn()
-                st.write('Out of ' + str(len(tot)) + ' possible hands, your probability of winning is : ' + str(100*(prop**(numPeople-1))) + '%')
+                st.write('For each of the ' + str(len(tot)) + ' possible cards to come out on the river, you would win an average of ' + str(average) + ' out of 990 possible hands')
+                st.write('your probability of winning with ' + str(numPeople) ' left in the game is : ' + str(100*(prop**(numPeople-1))) + '%')
                 st.write('Best card to come out on the river: ' + maxCard.getCard())
                 st.write('Worst card to come out on the river: ' + minCard.getCard())
                 
                 if st.button('See breakdown by possible cards to come out on the river'):
                     for entry in tot:
                         propWin, propLoss, propTie = probWinningLosingTying(numPeople, entry[1], entry[2], entry[3], entry[0])
-                        st.write('Card: ' + entry[4].getCard() + ', win probability: ' + str(100*propWin) + '%, tie probability: ' + str(100*propTie) + '%, loss probability: ' + str(100*propLoss) + '%')
+                        st.write('Card: ' + entry[4].getCard() + ', win probability: ' + str(round(100*propWin, 3)) + '%, tie probability: ' + str(round(100*propTie, 3)) + '%, loss probability: ' + str(round(100*propLoss, 3)) + '%')
 
             elif cardsOut == 7:
                 #st.write('Cards Dealt: ' + FirstCard.getCard() + ', ' + SecondCard.getCard())

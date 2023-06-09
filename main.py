@@ -1915,7 +1915,7 @@ if choice == 'Probabilities Calculator (just your hand known)':
                # st.write('Cards that came out on the flop: ' + ThirdCard.getCard() + ', ' + FourthCard.getCard() + ', ' + FifthCard.getCard())
                # st.write('Card that came out on the turn: ' + SixthCard.getCard())
                 
-                tot, average, prop, minCard, maxCard = hand.probabilityFlop()
+                tot, average, prop, minCard, maxCard = hand.probabilityTurn()
                 st.write('Out of ' + str(tot) + ' possible hands, your probability of winning is : ' + str(100*(prop**(numPeople-1))) + '%')
                 st.write('Best card to come out on the river: ' + maxCard.getCard())
                 st.write('Worst card to come out on the river: ' + minCard.getCard())

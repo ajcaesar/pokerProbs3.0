@@ -2549,7 +2549,6 @@ elif choice == 'Probabilities Calculator (everyones hand known)':
                 for card in winnersCards[num - 1]:
                     with columns[thisNumber%5]:
                         card = card.getCard()
-                        st.write(card)
                         st.image(options[card], caption=card, use_column_width = True)
                         thisNumber += 1
                 
